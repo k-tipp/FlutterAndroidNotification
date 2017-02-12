@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+apply plugin: 'flutter'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:20.0.+'
+}

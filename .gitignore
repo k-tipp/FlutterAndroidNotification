@@ -1,0 +1,14 @@
+.DS_Store
+.atom/
+.idea
+.packages
+gradle/
+.gradle/
+gradlew.bat
+gradlew
+.pub/
+build/
+packages/
+pubspec.lock
+
+android/buildSrc/
